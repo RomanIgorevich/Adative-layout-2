@@ -1,0 +1,43 @@
+@media (max-width: 1199px) {
+    /* header */
+  .header__top {
+    display: none;
+  }
+  .header__catalog-container {
+    justify-content: space-between;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__catalog-btn {
+    display: block;
+  }
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+    /* header */
+  .menu-btn {
+    display: none;
+  }
+  .basket-btn {
+    display: none;
+  }
+  .header__content {
+    padding: 12px 24px;
+  }
+  .header__logo-link {
+    width: 200px;
+  }
+  .menu-btn-mob {
+    display: block;
+  }
+  .basket-btn-mob {
+    display: block;
+  }
+}
+
+@media (max-width: 575px) {
+}

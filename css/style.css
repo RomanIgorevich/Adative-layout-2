@@ -111,6 +111,20 @@ body {
 .header__btn-main {
   display: none;
 }
+.menu-btn-mob {
+  display: none;
+  cursor: pointer;
+  width: 22px;
+  height: 14px;
+  position: relative;
+}
+.menu-btn-mob::after {
+  content: "";
+  width: 22px;
+  height: 14px;
+  position: absolute;
+  background-image: url(../img/menu-mini.svg);
+}
 .menu-btn {
   display: flex;
   justify-content: space-between;
@@ -142,6 +156,20 @@ body {
 }
 .header__btn-location {
   display: none;
+}
+.basket-btn-mob {
+  display: none;
+  cursor: pointer;
+  width: 16px;
+  height: 21px;
+  position: relative;
+}
+.basket-btn-mob::after {
+  content: "";
+  width: 16px;
+  height: 21px;
+  position: absolute;
+  background-image: url(../img/location-mini.svg);
 }
 .basket-btn {
   display: flex;
@@ -188,6 +216,7 @@ body {
 .header__catalog {
   background-color: #fff;
 }
+
 .header__catalog-container {
   font-weight: 700;
   display: flex;
@@ -197,6 +226,10 @@ body {
   padding: 12px 0 11px;
   margin: 0 24px;
   background: #fff;
+}
+.header__catalog-btn {
+  display: none;
+  cursor: pointer;
 }
 .header__menu-btn {
   display: none;
