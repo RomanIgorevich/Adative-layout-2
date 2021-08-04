@@ -1,53 +1,62 @@
-/* reset */
+/* reset ------------------------------------------------------------------------------------------*/
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 a {
   text-decoration: none;
   display: inline-block;
 }
+
 ul,
 li {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* connecting fonts */
+
+/* connecting fonts -------------------------------------------------------------------------------*/
 @font-face {
   font-family: "Gotham Pro";
   src: url("../fonts/Gotham_Pro.ttf");
 }
+
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "Gotham Pro", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   color: #262626;
   background: #f5f5f5;
 }
+
 .container {
   max-width: 1500px;
   margin: 0 auto;
 }
-/* header */
+
+/* header -----------------------------------------------------------------------------------------*/
 .header {
-  font-family: "Gotham Pro", sans-serif;
   font-size: 13px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
+
 .header__top {
   padding: 36px 24px 28px;
 }
+
 .header__top-list {
   display: flex;
   justify-content: center;
 }
-.header__top-item + .header__top-item {
+
+.header__top-item+.header__top-item {
   padding-left: 60px;
 }
+
 .header__location,
 .header__phone,
 .header__authorization,
@@ -58,6 +67,7 @@ body {
 .header__search {
   color: #262626;
 }
+
 .header__location,
 .header__phone,
 .header__authorization,
@@ -65,6 +75,7 @@ body {
   padding-left: 24px;
   position: relative;
 }
+
 .header__location::after {
   content: "";
   width: 16px;
@@ -74,6 +85,7 @@ body {
   top: 2px;
   left: 0;
 }
+
 .header__phone::after {
   content: "";
   width: 17px;
@@ -83,6 +95,7 @@ body {
   top: 2px;
   left: 0;
 }
+
 .header__authorization::after {
   content: "";
   width: 19px;
@@ -92,6 +105,7 @@ body {
   top: 0px;
   left: 0;
 }
+
 .header__favorites::after {
   content: "";
   width: 20px;
@@ -101,6 +115,7 @@ body {
   top: 2px;
   left: 0;
 }
+
 .header__content {
   display: flex;
   justify-content: space-between;
@@ -108,9 +123,11 @@ body {
   background-color: #fff;
   padding: 26px 48px;
 }
+
 .header__btn-main {
   display: none;
 }
+
 .menu-btn-mob {
   display: none;
   cursor: pointer;
@@ -118,6 +135,7 @@ body {
   height: 14px;
   position: relative;
 }
+
 .menu-btn-mob::after {
   content: "";
   width: 22px;
@@ -125,11 +143,13 @@ body {
   position: absolute;
   background-image: url(../img/menu-mini.svg);
 }
+
 .menu-btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .menu-btn__images {
   width: 48px;
   height: 48px;
@@ -137,6 +157,7 @@ body {
   border-radius: 50%;
   position: relative;
 }
+
 .menu-btn__images::after {
   content: "";
   width: 22px;
@@ -146,17 +167,21 @@ body {
   top: 15px;
   left: 11px;
 }
+
 .menu-btn__text {
   padding-left: 14px;
   color: #dfa94a;
   display: inline-block;
 }
+
 .header__logo-link {
   padding-top: 8px;
 }
+
 .header__btn-location {
   display: none;
 }
+
 .basket-btn-mob {
   display: none;
   cursor: pointer;
@@ -164,6 +189,7 @@ body {
   height: 21px;
   position: relative;
 }
+
 .basket-btn-mob::after {
   content: "";
   width: 16px;
@@ -171,15 +197,18 @@ body {
   position: absolute;
   background-image: url(../img/location-mini.svg);
 }
+
 .basket-btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .basket-btn__text {
   padding-top: 0px;
   padding-right: 14px;
 }
+
 .basket-btn__images {
   width: 48px;
   height: 48px;
@@ -187,6 +216,7 @@ body {
   border-radius: 50%;
   position: relative;
 }
+
 .basket-btn__images::after {
   content: "";
   width: 19px;
@@ -196,6 +226,7 @@ body {
   top: 8px;
   left: 13px;
 }
+
 .basket-btn__quantity-of-goods {
   background-color: #a86d06;
   color: #fff;
@@ -210,9 +241,11 @@ body {
   line-height: 20px;
   z-index: 2;
 }
+
 .basket-btn__price {
   padding: 0 0 0 14px;
 }
+
 .header__catalog {
   background-color: #fff;
 }
@@ -227,24 +260,30 @@ body {
   margin: 0 24px;
   background: #fff;
 }
+
 .header__catalog-btn {
   display: none;
   cursor: pointer;
 }
+
 .header__menu-btn {
   display: none;
 }
+
 .header__menu {
   display: flex;
   justify-content: center;
 }
-.header__menu-item + .header__menu-item {
+
+.header__menu-item+.header__menu-item {
   padding-left: 24px;
 }
+
 .header__search {
   padding-left: 48px;
   position: relative;
 }
+
 .header__search::after {
   content: "";
   width: 19px;
@@ -253,4 +292,140 @@ body {
   background-image: url(../img/search.svg);
   top: 3px;
   left: 24px;
+}
+
+/* slider-top -------------------------------------------------------------------------------------*/
+.slider-top__inners {
+  padding: 24px;
+  background-color: #fff;
+}
+
+.slider-top__inner {
+  display: flex !important;
+  justify-content: space-between;
+  background-color: #efefef;
+  padding: 36px 0;
+}
+
+.slider-top__content {
+  margin-left: 160px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.slider-top__discont {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgba(38, 38, 38, 0.5);
+  padding: 0px 0 15px 0;
+}
+
+.slider-top__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: 0.03em;
+  padding-bottom: 15px;
+}
+
+.slider-top__text {
+  font-family: "PT Sans", sans-serif;
+  padding-bottom: 30px;
+}
+
+.slider-top__link {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 28px;
+  padding: 9px 30px 5px 43px;
+  border: 1px solid #7a7a7a;
+  display: inline-block;
+  position: relative;
+  outline: none;
+  color: #262626;
+}
+
+.slider-top__link::after {
+  content: "";
+  width: 12px;
+  height: 6px;
+  position: absolute;
+  background-image: url(../img/go-link.svg);
+  top: 19px;
+  left: 20px;
+}
+
+.slider-top__images {
+  max-width: 440px;
+  margin-right: 210px;
+}
+
+/* slick-slider ---------------------------------------------------------------------------------- */
+/* Точки (булиты) */
+.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+  bottom: 40px;
+  left: 50%;
+  position: absolute;
+}
+
+.slick-dots li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+/* Элемент точки */
+.slick-dots li {
+  z-index: 3;
+  font-size: 0;
+  width: 38px;
+  height: 2px;
+  border: none;
+  background: rgba(38, 38, 38, 0.3);
+  margin-bottom: 15px;
+  outline: none;
+}
+
+/* Активная точка */
+.slick-dots li.slick-active {
+  background-color: #262626;
+  z-index: 10;
+}
+
+/* Стрелка */
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(38, 38, 38, 0.3);
+  z-index: 3;
+  outline: none;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  content: ' ';
+}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+  left: 48px;
+  background: url(../img/left.svg) center no-repeat;
+}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+  right: 48px;
+  background: url(../img/right.svg) center no-repeat;
 }

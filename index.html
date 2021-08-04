@@ -1,87 +1,157 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__top">
-          <ul class="header__top-list">
-            <li class="header__top-item">
-              <a class="header__location" href="#">САНКТ-ПЕТЕРБУРГ</a>
-            </li>
-            <li class="header__top-item">
-              <a class="header__phone" href="tel:33453092145"
-                >8 (812) 577-42-18 / ЗАКАЗАТЬ ЗВОНОК</a
-              >
-            </li>
-            <li class="header__top-item">
-              <a class="header__authorization" href="#">ВХОД / РЕГИСТРАЦИЯ</a>
-            </li>
-            <li class="header__top-item">
-              <a class="header__favorites" href="#">ИЗБРАННОЕ</a>
-            </li>
-          </ul>
-        </div>
-        <div class="header__content">
-          <a class="header__btn-main" href="#"></a>
-          <a class="menu-btn" href="#">
-            <div class="menu-btn__images"></div>
-            <div class="menu-btn__text">МЕНЮ</div>
-          </a>
-          <a class="header__logo" href="#">
-            <img class="header__logo-link" src="img/logo.svg" alt="" />
-          </a>
-          <a class="header__btn-location" href="#"></a>
-          <a class="basket-btn" href="#">
-            <div class="basket-btn__text">КОРЗИНА</div>
-            <div class="basket-btn__images">
-              <div class="basket-btn__quantity-of-goods">5</div>
-            </div>
-            <span class="basket-btn__price">1 200 ₽</span>
-          </a>
-        </div>
-        <div class="header__catalog">
-          <div class="header__catalog-container">
-            <ul class="header__menu">
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="#">СРЕДСТВА ДЛЯ ОБУВИ</a>
-              </li>
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="#">МАТЕРИАЛ</a>
-              </li>
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="#">НАЗНАЧЕНИЕ</a>
-              </li>
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="#">НАБОРЫ</a>
-              </li>
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="#">АКСЕССУАРЫ</a>
-              </li>
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="#">БРИТЬЕ И УХОД</a>
-              </li>
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="#">БРЕНДЫ</a>
-              </li>
-            </ul>
-            <a class="header__search" href="#">ПОИСК</a>
-          </div>
-        </div>
-      </div>
-    </header>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
 
-    <script src="js/script.js"></script>
-  </body>
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet" />
+
+	<link rel="stylesheet" type="text/css" href="css/slick.css" />
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/media.css" />
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="header__top">
+				<ul class="header__top-list">
+					<li class="header__top-item">
+						<a class="header__location" href="#">САНКТ-ПЕТЕРБУРГ</a>
+					</li>
+					<li class="header__top-item">
+						<a class="header__phone" href="tel:33453092145">8 (812) 577-42-18 / ЗАКАЗАТЬ ЗВОНОК</a>
+					</li>
+					<li class="header__top-item">
+						<a class="header__authorization" href="#">ВХОД / РЕГИСТРАЦИЯ</a>
+					</li>
+					<li class="header__top-item">
+						<a class="header__favorites" href="#">ИЗБРАННОЕ</a>
+					</li>
+				</ul>
+			</div>
+			<div class="header__content">
+				<a class="menu-btn-mob" href="#"> </a>
+				<a class="menu-btn" href="#">
+					<div class="menu-btn__images"></div>
+					<div class="menu-btn__text">МЕНЮ</div>
+				</a>
+				<a class="header__logo" href="#">
+					<img class="header__logo-link" src="img/logo.svg" alt="" />
+				</a>
+				<a class="basket-btn-mob" href="#"></a>
+				<a class="basket-btn" href="#">
+					<div class="basket-btn__text">КОРЗИНА</div>
+					<div class="basket-btn__images">
+						<div class="basket-btn__quantity-of-goods">5</div>
+					</div>
+					<span class="basket-btn__price">1 200 ₽</span>
+				</a>
+			</div>
+			<div class="header__catalog">
+				<div class="header__catalog-container">
+					<div class="header__catalog-btn">КАТАЛОГ</div>
+					<ul class="header__menu">
+						<li class="header__menu-item">
+							<a class="header__menu-link" href="#">СРЕДСТВА ДЛЯ ОБУВИ</a>
+						</li>
+						<li class="header__menu-item">
+							<a class="header__menu-link" href="#">МАТЕРИАЛ</a>
+						</li>
+						<li class="header__menu-item">
+							<a class="header__menu-link" href="#">НАЗНАЧЕНИЕ</a>
+						</li>
+						<li class="header__menu-item">
+							<a class="header__menu-link" href="#">НАБОРЫ</a>
+						</li>
+						<li class="header__menu-item">
+							<a class="header__menu-link" href="#">АКСЕССУАРЫ</a>
+						</li>
+						<li class="header__menu-item">
+							<a class="header__menu-link" href="#">БРИТЬЕ И УХОД</a>
+						</li>
+						<li class="header__menu-item">
+							<a class="header__menu-link" href="#">БРЕНДЫ</a>
+						</li>
+					</ul>
+					<a class="header__search" href="#">ПОИСК</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="slider-top">
+		<div class="container">
+			<div class="slider-top__inners">
+				<div class="slider-top__inner">
+					<div class="slider-top__content">
+						<p class="slider-top__discont">СКИДКИ ДО 25%</p>
+						<h2 class="slider-top__title">Французкие спреи Saphir Medalle D’or</h2>
+						<p class="slider-top__text">Премиальные лаки и спреи для ухода за изделиями из натуральной кожи
+							по
+							самым выгодным ценам</p>
+						<a class="slider-top__link" href="#">Выбирайте</a>
+					</div>
+					<img class="slider-top__images" src="img/slider.png" alt="">
+				</div>
+				<div class="slider-top__inner">
+					<div class="slider-top__content">
+						<p class="slider-top__discont">СКИДКИ ДО 25%</p>
+						<h2 class="slider-top__title">Французкие спреи Saphir Medalle D’or</h2>
+						<p class="slider-top__text">Премиальные лаки и спреи для ухода за изделиями из натуральной кожи
+							по
+							самым выгодным ценам</p>
+						<a class="slider-top__link" href="#">Выбирайте</a>
+					</div>
+					<img class="slider-top__images" src="img/slider.png" alt="">
+				</div>
+				<div class="slider-top__inner">
+					<div class="slider-top__content">
+						<p class="slider-top__discont">СКИДКИ ДО 25%</p>
+						<h2 class="slider-top__title">Французкие спреи Saphir Medalle D’or</h2>
+						<p class="slider-top__text">Премиальные лаки и спреи для ухода за изделиями из натуральной кожи
+							по
+							самым выгодным ценам</p>
+						<a class="slider-top__link" href="#">Выбирайте</a>
+					</div>
+					<img class="slider-top__images" src="img/slider.png" alt="">
+				</div>
+				<div class="slider-top__inner">
+					<div class="slider-top__content">
+						<p class="slider-top__discont">СКИДКИ ДО 25%</p>
+						<h2 class="slider-top__title">Французкие спреи Saphir Medalle D’or</h2>
+						<p class="slider-top__text">Премиальные лаки и спреи для ухода за изделиями из натуральной кожи
+							по
+							самым выгодным ценам</p>
+						<a class="slider-top__link" href="#">Выбирайте</a>
+					</div>
+					<img class="slider-top__images" src="img/slider.png" alt="">
+				</div>
+				<div class="slider-top__inner">
+					<div class="slider-top__content">
+						<p class="slider-top__discont">СКИДКИ ДО 25%</p>
+						<h2 class="slider-top__title">Французкие спреи Saphir Medalle D’or</h2>
+						<p class="slider-top__text">Премиальные лаки и спреи для ухода за изделиями из натуральной кожи
+							по
+							самым выгодным ценам</p>
+						<a class="slider-top__link" href="#">Выбирайте</a>
+					</div>
+					<img class="slider-top__images" src="img/slider.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+
+	<script src="js/script.js"></script>
+</body>
+
 </html>
