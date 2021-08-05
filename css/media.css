@@ -48,29 +48,32 @@
     grid-template-rows: 1fr 1fr 1fr;
   }
 
-  .collection__item-1,
-  .collection__item-2,
-  .collection__item-3 {
+   .collection__item-1 {
+    background-image: url(../img/k-fon-1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 325px;
-  }
-
-  .collection__item-1 {
-    background-image: url(../img/k-fon-1.png);
     grid-column: 1/2;
     grid-row: 1/2;
   }
 
   .collection__item-2 {
     background: url(../img/k-fon-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 325px;
     grid-column: 1/2;
     grid-row: 2/3;
   }
 
   .collection__item-3 {
     background: url(../img/k-fon-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 325px;
     grid-column: 1/2;
     grid-row: 3/4;
   }

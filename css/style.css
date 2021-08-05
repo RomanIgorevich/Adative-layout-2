@@ -621,3 +621,103 @@ body {
   letter-spacing: 0.02em;
   color: #FFF;
 }
+
+/* section-5 ------------------------------------------------------------------------------------- */
+
+.section-5__inner-pad {
+  background: #fff;
+  padding: 0 24px 24px 24px;
+}
+
+.section-5__inner {
+  background: #F2EADB;
+  height: 544px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.section-5__img {
+  background: url(../img/feedback.png) no-repeat;
+  width: 524px;
+  height: 599px;
+  position: absolute;
+  top: -19px;
+  left: 77px;
+}
+
+.section-5__text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 544px;
+  padding-top: 100px;
+  margin-right: 170px;
+}
+
+.section-5__text_1 {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 26px;
+  letter-spacing: 0.08em;
+  color: rgba(38, 38, 38, 0.5);
+  padding-bottom: 20px;
+}
+
+.section-5__text_2 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: 0.03em;
+  padding-bottom: 20px;
+}
+
+.section-5__text_3 {
+  font-family: "PT Sans", sans-serif;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  padding-bottom: 30px;
+}
+
+.section-5__form {
+  display: flex;
+}
+
+.section-5__form input {
+  outline: none;
+  height: 45px;
+  width: 365px;
+  padding: 0 10px 0 0;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #7A7A7A;
+}
+
+.section-5__form button {
+  height: 45px;
+  width: 162px;
+  margin-left: 25px;
+  line-height: 2px;
+  padding: 4px 20px 6px 43px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  position: relative;
+  border: 1px solid #7A7A7A;
+}
+
+.section-5__form button::after {
+  content: "";
+  width: 12px;
+  height: 6px;
+  position: absolute;
+  background-image: url(../img/go-link.svg);
+  top: 19px;
+  left: 20px;
+}
