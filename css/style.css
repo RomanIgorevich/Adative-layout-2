@@ -487,3 +487,137 @@ body {
   text-align: center;
   color: #A86D06;
 }
+
+/* collection ------------------------------------------------------------------------------------ */
+.collection__inner {
+  padding: 0 24px 24px 24px;
+  background: #fff;
+}
+
+.title-box {
+  background: #F9F9F9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.title-box__images {
+  width: 19px;
+  height: 34px;
+  background: url(../img/k.svg) center no-repeat;
+}
+
+.title-box__title {
+  padding-top: 22px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 48px;
+  letter-spacing: 0.03em;
+}
+
+.title-box__symbol {
+  width: 8px;
+  height: 8px;
+  background: url(../img/dot.svg) center no-repeat;
+  margin-bottom: 30px;
+}
+
+.collection__items {
+  background: #F9F9F9;
+  padding: 0 24px 100px 24px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 311px 311px 311px 311px;
+  column-gap: 24px;
+  row-gap: 24px;
+}
+
+.collection__item-1 {
+  background: url(../img/k-fon-1.png) center no-repeat;
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.collection__item-2 {
+  background: url(../img/k-fon-2.png) center no-repeat;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.collection__item-3 {
+  background: url(../img/k-fon-3.png) center no-repeat;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.collection__item-4 {
+  background: url(../img/k-fon-4.png) center no-repeat;
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.collection__item-5 {
+  background: url(../img/k-fon-5.png) center no-repeat;
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+.collection__item-6 {
+  background: url(../img/k-fon-6.png) center no-repeat;
+  grid-column: 2/3;
+  grid-row: 3/5;
+}
+
+.collection__item-1,
+.collection__item-2,
+.collection__item-3,
+.collection__item-4,
+.collection__item-5,
+.collection__item-6 {
+  position: relative;
+}
+
+.collection__item-title {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: 0.02em;
+  color: #FFF;
+}
+
+.collection__item-price {
+  font-family: "PT Sans", sans-serif;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: #FFF;
+}
+
+.collection__item-link {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: url(../img/k-link.svg)center no-repeat;
+  width: 32px;
+  height: 32px;
+}
+
+.collection__item-text {
+  font-family: "PT Sans", sans-serif;
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: right;
+  letter-spacing: 0.02em;
+  color: #FFF;
+}
