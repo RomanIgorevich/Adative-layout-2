@@ -1,3 +1,15 @@
+@media (max-width: 1329px) {
+
+  /* section-5 */
+  .section-5__img {
+    left: 0px;
+  }
+
+  .section-5__text {
+    margin-right: 24px;
+  }
+}
+
 @media (max-width: 1199px) {
 
   /* header */
@@ -25,6 +37,11 @@
   .slider-top__images {
     margin-right: 100px;
   }
+
+  /* section-5 */
+  .section-5__text {
+    max-width: 444px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -48,7 +65,7 @@
     grid-template-rows: 1fr 1fr 1fr;
   }
 
-   .collection__item-1 {
+  .collection__item-1 {
     background-image: url(../img/k-fon-1.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -82,6 +99,55 @@
   .collection__item-5,
   .collection__item-6 {
     display: none;
+  }
+
+  /* section-5 */
+  .section-5__inner {
+    height: 1004px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-5__img {
+    background-position: center;
+    width: 100%;
+  }
+
+  .section-5__text {
+    position: relative;
+    top: 240px;
+    margin-right: 0;
+  }
+
+  .section-5__text_1 {
+    text-align: center;
+  }
+
+  .section-5__text_2 {
+    text-align: center;
+  }
+
+  .section-5__text_3 {
+    text-align: center;
+  }
+
+  .section-5__form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-5__form input {
+    margin-bottom: 30px;
+    outline: none;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .section-5__form button {
+    width: 162px;
+    margin-left: 0;
+    margin-bottom: 50px;
   }
 }
 
@@ -154,6 +220,64 @@
   .collection__items {
     background: #fff;
     padding: 0;
+  }
+
+  /* section-5 */
+  .section-5__inner {
+    height: 674px;
+    display: block;
+    position: relative;
+  }
+
+  .section-5__img {
+    background-position: center;
+    background-size: 283px 323px;
+    width: 100%;
+    top: -160px;
+  }
+
+  .section-5__text {
+    position: relative;
+    top: 210px;
+    margin: 0 auto !important;
+    padding: 100px 24px 48px 24px;
+    margin-right: 0;
+  }
+
+  .section-5__text_1 {
+    padding-bottom: 15px;
+    text-align: center;
+  }
+
+  .section-5__text_2 {
+    font-size: 14px;
+    line-height: 32px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+
+  .section-5__text_3 {
+    font-size: 14px;
+    line-height: 22px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+
+  .section-5__form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-5__form input {
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .section-5__form button {
+    margin-left: 0;
+    margin-bottom: 50px;
   }
 }
 
