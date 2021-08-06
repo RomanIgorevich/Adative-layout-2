@@ -831,6 +831,7 @@ body {
   position: relative;
   width: 33.3%;
   padding-bottom: 80px;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.07);
 }
 
 .services__item img {
