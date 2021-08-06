@@ -774,3 +774,127 @@ body {
   text-align: center;
   color: #A86D06;
 }
+
+/* services -------------------------------------------------------------------------------------- */
+.services__inner {
+  padding: 0 24px 24px 24px;
+  background-color: #fff;
+}
+
+.services__inner-bg {
+  background: #F9F9F9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.services__title-box {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.services__title-img {
+  display: block;
+  height: 34px;
+  width: 22px;
+  background: url(../img/j.svg) center no-repeat;
+}
+
+.services__text {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: 0.03em;
+}
+
+.services_dots_img {
+  height: 8px;
+  width: 8px;
+  background: url(../img/dot_gold.svg) center no-repeat;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.services__items {
+  display: flex;
+  justify-content: space-between;
+  min-height: 650px;
+  padding: 0 24px 30px 24px;
+}
+
+.services__item {
+  background-color: white;
+  position: relative;
+  width: 33.3%;
+  padding-bottom: 80px;
+}
+
+.services__item img {
+  width: 100%;
+}
+
+.services__item+.services__item {
+  margin-left: 24px;
+}
+
+.services__item-name-i {
+  margin-top: 27px;
+  line-height: 22px;
+  padding: 0 40px;
+  letter-spacing: 0.02em;
+  color: #A86D06;
+}
+
+.services__item-date {
+  font-size: 13px;
+  line-height: 22px;
+  padding: 0 40px;
+  letter-spacing: 0.02em;
+  color: #7A7A7A;
+}
+
+.services__item-title {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  padding: 0 40px;
+  letter-spacing: 0.02em;
+}
+
+.services__item-text {
+  margin-top: 25px;
+  font-family: "PT Sans", sans-serif;
+  padding: 0 40px;
+  letter-spacing: 0.02em;
+}
+
+.services__item-link {
+  width: 400px;
+  height: 26px;
+  margin-top: 15px;
+  font-weight: bold;
+  padding: 0 40px;
+  letter-spacing: 0.02em;
+  color: #A86D06;
+  position: absolute;
+  bottom: 40px;
+}
+
+.services__btn {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  padding: 11px 57px 9px 57px;
+  display: block;
+  background: #A86D06;
+  border: 1px solid #A86D06;
+  text-decoration: none;
+  color: #FFFFFF;
+  margin-bottom: 100px;
+}
