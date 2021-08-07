@@ -906,7 +906,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 41px 0 31px 0;
-  border-bottom: 1px solid #E9E9E9;
+  border-bottom: 2px solid #E9E9E9;
 }
 
 .fs1__link+.fs1__link {
@@ -978,7 +978,7 @@ body {
 }
 
 .border-top {
-  border-top: 1px solid #E9E9E9;
+  border-top: 2px solid #E9E9E9;
 }
 
 .footer__section-4 {
