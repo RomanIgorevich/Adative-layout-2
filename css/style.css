@@ -899,3 +899,129 @@ body {
   color: #FFFFFF;
   margin-bottom: 100px;
 }
+
+/* footer ---------------------------------------------------------------------------------------- */
+.footer__section-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 41px 0 31px 0;
+  border-bottom: 1px solid #E9E9E9;
+}
+
+.fs1__link+.fs1__link {
+  padding-left: 15px;
+}
+
+.fs1__link img {
+  max-width: 31px;
+  display: block;
+}
+
+.footer__section-2 {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 45px;
+  max-width: 1126px;
+}
+
+.fs2__column {
+  width: 25%;
+}
+
+.fs2__title {
+  letter-spacing: 0.02em;
+  padding-bottom: 30px;
+}
+
+.fs2__column li+li {
+  padding-top: 15px;
+}
+
+.pad-top {
+  padding-top: 56px;
+}
+
+.section_link {
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  color: #262626;
+}
+
+.section_link-1 {
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #7A7A7A;
+}
+
+.footer__section-3 {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 29px;
+  max-width: 1126px;
+}
+
+.fs3__left {
+  width: 50%;
+}
+
+.fs3__right {
+  width: 25%;
+}
+
+.section_link-2 {
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  color: #7A7A7A;
+}
+
+.fs3__left ul {
+  display: flex;
+}
+
+.fs3__left li+li {
+  padding-left: 15px;
+}
+
+.footer__section-4 {
+  border-top: 1px solid #E9E9E9;
+  padding: 30px 0 208px 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1126px;
+}
+
+.fs4__left {
+  width: 25%;
+}
+
+.fs4__left img {
+  max-width: 135px;
+  display: block;
+}
+
+.fs4__center {
+  width: 50%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #7A7A7A;
+}
+
+.fs4__right {
+  width: 25%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: rgba(122, 122, 122, 0.5);
+}
